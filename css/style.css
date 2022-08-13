@@ -1,0 +1,23 @@
+.wrap {
+    margin: auto;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.passwd-text {
+    cursor: pointer;
+    margin: 30px;
+}
+
+#btn-passwd a {
+    font-size: 20px;
+    color: grey;
+}
+
+#btn-passwd a:hover {
+    color: black;
+}

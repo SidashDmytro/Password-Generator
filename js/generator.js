@@ -3,11 +3,12 @@ function generatePassword() {
         'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
         'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
         'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
-        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+        'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '-', '_'];
     let result = '';
     const num = symbols.length;
+    const lengthPassw = 32;
 
-    for (let i = 0; i < 32; i++) {
+    for (let i = 0; i < lengthPassw; i++) {
         result += symbols[Math.floor(Math.random() * num)];
     }
 

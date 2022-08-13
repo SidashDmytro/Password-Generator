@@ -21,3 +21,8 @@
 #btn-passwd a:hover {
     color: black;
 }
+
+#h1-small {
+    font-size: 20px;
+    color: grey;
+}

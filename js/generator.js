@@ -15,9 +15,9 @@ function generatePassword() {
     document.querySelector('#passwd-copy').innerHTML = result;
 }
 
-document.addEventListener('DOMContentLoaded', generatePassword, false); // при обновлении страницы генерируется пароль
+document.addEventListener('DOMContentLoaded', generatePassword, false); // generate a password when page is reload
 
-document.getElementById('btn-passwd').onclick = generatePassword; // генерация пароля при помощи кнопки */
+document.getElementById('btn-passwd').onclick = generatePassword; // generate a password using the button
 
 function copyText() {
     let copyText = document.getElementById('passwd-copy').textContent;
@@ -30,4 +30,4 @@ function copyText() {
         });
 }
 
-document.getElementById('passwd-copy').onclick = copyText; // копирование пароля в буфер обмена при нажатии на пароль
+document.getElementById('passwd-copy').onclick = copyText; // copying the password to the buffer
